@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style>
+        .contenedor {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            margin-top: 3%;
+        }
+        .contenedor h1{
+            font-size: 60px;
+        }
+
+        .circulo-menta {
+            width: 80px; /* Diámetro del círculo */
+            height: 80px; /* Diámetro del círculo */
+            background-color: #9fe7d9; /* Color menta claro */
+            border: 2px solid #000; /* Borde negro */
+            border-radius: 50%; /* Hace que el div sea un círculo */
+            position: absolute; /* Posiciona el círculo de manera absoluta */
+            top: 30px; /* Distancia desde la parte superior */
+            left: 30px; /* Distancia desde la parte izquierda */
+            z-index: 1; /* Asegura que el círculo esté por encima de otros elementos */
+        }
+
+
+        .container2 {
+            position: fixed;
+            top: 2px;
+            right: 10px;
+        }
+
+        .container2 img {
+            width: 300px;
+            height: auto;
+        }
+
+        .container3 {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .container3 img {
+            width: 70px;
+            height: auto;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.2s ease;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            color: #666;
+        }
+
+        .last-link {
+            border-bottom: 2px solid #333;
+        }
+        .seccion-informacion {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .seccion-informacion h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .seccion-informacion p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+ nav ul li a {
+    display: block;
+    font-size: 30px;
+    text-decoration: none;
+    color: #444146;
+    transition: color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+/* Estilos cuando se pasa el cursor sobre el enlace */
+nav ul li a:hover {
+    color: #444146; /* Cambio de color del texto */
+    transform: scale(1.05); /* Efecto de escala al pasar el cursor */
+}
+/* Estilos para los enlaces */
+nav ul li a {
+    display: inline-block; /* Cambia a inline-block para que la barra tenga la longitud del texto */
+    font-size: 30px;
+    text-decoration: none;
+    color: #444146;
+    position: relative; /* Para posicionar el pseudo-elemento */
+}
+
+/* Estilos del pseudo-elemento de la barra de color */
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0; /* Posición de la barra de color debajo del texto */
+    left: 0;
+    width: 0; /* Ancho inicial de la barra */
+    height: 4px; /* Altura de la barra */
+    background-color: #753aff; /* Color inicial de la barra */
+    transition: width 0.5s; /* Transición suave para el ancho */
+}
+
+/* Estilos cuando se pasa el cursor sobre el enlace */
+nav ul li a:hover::before {
+    width: 100%; /* Ancho completo de la barra al pasar el cursor */
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="circulo-menta"></div>
+
+    <div class="contenedor">
+        <h1>HISTORIA</h1>
+    </div>
+
+    <div class="container2">
+        <img src="img2.png" alt="Descripción de la imagen">
+    </div>
+
+    <div class="container3">
+        <img src="Imagen3.png" alt="Descripción de la imagen">
+    </div>
+
+    <div class="seccion-informacion">
+        <h2>Nuestra historia</h2>
+        <p style="font-size: 24px;">La historia de nuestro puesto de comidas frente a la escuela es una mezcla de pasión por la cocina y el deseo de servir a la comunidad escolar con opciones saludables y deliciosas.
+
+        </p>
+<P style="font-size: 24px;">Todo comenzó con la visión de maría del Carmen, quien, como padre y amante de la buena comida, se dio cuenta de la falta de opciones nutritivas y convenientes para los estudiantes y el personal de la escuela. Con el objetivo de llenar ese vacío, decidió convertir su pasión por la cocina en un negocio que no solo ofreciera comida, sino que también educara sobre la importancia de una alimentación balanceada.
+</P>
+<P style="font-size: 24px;">Después de meses de planificación y preparación, nuestro puesto de comidas abrió sus puertas frente a la escuela. Desde el primer día, nos comprometimos a ofrecer alimentos frescos, preparados con ingredientes de alta calidad y métodos de cocción saludables. A medida que pasaba el tiempo, nos convertimos en un punto de encuentro popular para estudiantes, padres y personal escolar, quienes apreciaban nuestras opciones deliciosas y nutritivas.
+
+</P>
+<P style="font-size: 24px;">Con el apoyo y la retroalimentación positiva de la comunidad escolar, nuestro puesto de comidas ha crecido y evolucionado a lo largo de los años. Hemos ampliado nuestro menú para incluir una variedad aún mayor de opciones saludables y hemos participado activamente en eventos y programas que promueven el bienestar de los estudiantes.
+
+</P>
+<P style="font-size: 24px;">Hoy en día, nos enorgullece ser parte integral de la comunidad escolar, no solo como proveedores de comida, sino también como defensores de hábitos alimenticios saludables y modelos a seguir en responsabilidad social empresarial. Mirando hacia el futuro, estamos comprometidos a seguir sirviendo con pasión y excelencia, mientras continuamos nutriendo cuerpos y mentes en nuestra querida comunidad escolar.
+
+</P>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

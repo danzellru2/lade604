@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style>
+        .contenedor {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            margin-top: 3%;
+        }
+        .contenedor h1{
+            font-size: 60px;
+        }
+
+        .circulo-menta {
+            width: 80px; /* Diámetro del círculo */
+            height: 80px; /* Diámetro del círculo */
+            background-color: #9fe7d9; /* Color menta claro */
+            border: 2px solid #000; /* Borde negro */
+            border-radius: 50%; /* Hace que el div sea un círculo */
+            position: absolute; /* Posiciona el círculo de manera absoluta */
+            top: 30px; /* Distancia desde la parte superior */
+            left: 30px; /* Distancia desde la parte izquierda */
+            z-index: 1; /* Asegura que el círculo esté por encima de otros elementos */
+        }
+
+
+        .container2 {
+            position: fixed;
+            top: 2px;
+            right: 10px;
+        }
+
+        .container2 img {
+            width: 300px;
+            height: auto;
+        }
+
+        .container3 {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .container3 img {
+            width: 70px;
+            height: auto;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.2s ease;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            color: #666;
+        }
+
+        .last-link {
+            border-bottom: 2px solid #333;
+        }
+        .seccion-informacion {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .seccion-informacion h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .seccion-informacion p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+ nav ul li a {
+    display: block;
+    font-size: 30px;
+    text-decoration: none;
+    color: #444146;
+    transition: color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+/* Estilos cuando se pasa el cursor sobre el enlace */
+nav ul li a:hover {
+    color: #444146; /* Cambio de color del texto */
+    transform: scale(1.05); /* Efecto de escala al pasar el cursor */
+}
+/* Estilos para los enlaces */
+nav ul li a {
+    display: inline-block; /* Cambia a inline-block para que la barra tenga la longitud del texto */
+    font-size: 30px;
+    text-decoration: none;
+    color: #444146;
+    position: relative; /* Para posicionar el pseudo-elemento */
+}
+
+/* Estilos del pseudo-elemento de la barra de color */
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0; /* Posición de la barra de color debajo del texto */
+    left: 0;
+    width: 0; /* Ancho inicial de la barra */
+    height: 4px; /* Altura de la barra */
+    background-color: #753aff; /* Color inicial de la barra */
+    transition: width 0.5s; /* Transición suave para el ancho */
+}
+
+/* Estilos cuando se pasa el cursor sobre el enlace */
+nav ul li a:hover::before {
+    width: 100%; /* Ancho completo de la barra al pasar el cursor */
+}
+        /* Estilos previos omitidos por brevedad */
+        .valores-lista {
+            text-align: left; /* Alineación del texto a la izquierda */
+            margin-top: 30px; /* Espacio superior */
+        }
+
+        .valores-lista h3 {
+            font-size: 24px; /* Tamaño de fuente para el título de la lista */
+            margin-bottom: 10px; /* Espacio inferior */
+        }
+
+        .valores-lista ul {
+            list-style-type: disc; /* Tipo de viñeta */
+            padding-left: 20px; /* Sangría izquierda */
+        }
+
+        .valores-lista li {
+            font-size: 20px; /* Tamaño de fuente para los elementos de la lista */
+            margin-bottom: 5px; /* Espacio inferior entre elementos de la lista */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="circulo-menta"></div>
+
+    <div class="contenedor">
+        <h1>VALORES</h1>
+    </div>
+
+    <div class="container2">
+        <img src="img2.png" alt="Descripción de la imagen">
+    </div>
+
+    <div class="container3">
+        <img src="Imagen3.png" alt="Descripción de la imagen">
+    </div>
+
+    <div class="seccion-informacion">
+        <h2>Nuestros valores</h2>
+
+        <!-- Lista de valores -->
+        <div class="valores-lista">
+
+            <ul>
+                <li>Salud y nutricion:<p> Compromiso con la oferta de opciones alimenticias saludables y equilibradas que promuevan el bienestar de los estudiantes y el personal escolar.
+                </p></li>
+                <li>Calidad:<p> Enfoque en la excelencia en la selección de ingredientes frescos y de alta calidad, así como en la preparación cuidadosa de cada platillo para garantizar la satisfacción del cliente.
+                </p></li>
+                <li>Responsabilidad social:<p> Actuar como un miembro responsable de la comunidad escolar, apoyando iniciativas locales, promoviendo la educación sobre la nutrición y participando en actividades que beneficien a la comunidad.
+                </p></li>
+                <li>Servicio al cliente:<p> Priorizar la atención amable, eficiente y personalizada a cada cliente, brindando una experiencia positiva en cada visita al puesto de comidas.
+                </p></li>
+                <li>Integridad:<p> Operar con honestidad, transparencia y ética en todas las prácticas comerciales, manteniendo altos estándares de integridad en todas las interacciones con clientes, proveedores y la comunidad en general.
+                </p></li>
+                <li>Innovación: <p>Estar en constante búsqueda de nuevas ideas y tendencias culinarias para ofrecer opciones creativas y atractivas que satisfagan las necesidades y preferencias cambiantes de la comunidad escolar.
+                </p></li>
+                <li>Sostenibilidad: <p>Compromiso con prácticas comerciales responsables que minimicen el impacto ambiental, como la reducción de residuos, el uso de materiales y envases ecoamigables, y la promoción de ingredientes locales y de temporada.</p></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

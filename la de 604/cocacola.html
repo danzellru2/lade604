@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            margin-top: 3%;
+        }
+
+        .contenedor h1 {
+            font-size: 60px;
+        }
+
+        .circulo-menta {
+            width: 80px; /* Diámetro del círculo */
+            height: 80px; /* Diámetro del círculo */
+            background-color: #9fe7d9; /* Color menta claro */
+            border: 2px solid #000; /* Borde negro */
+            border-radius: 50%; /* Hace que el div sea un círculo */
+            position: absolute; /* Posiciona el círculo de manera absoluta */
+            top: 30px; /* Distancia desde la parte superior */
+            left: 30px; /* Distancia desde la parte izquierda */
+            z-index: 1; /* Asegura que el círculo esté por encima de otros elementos */
+        }
+
+        .container2 {
+            position: fixed;
+            top: 2px;
+            right: 10px;
+        }
+
+        .container2 img {
+            width: 300px;
+            height: auto;
+        }
+
+        .container3 {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .container3 img {
+            width: 70px;
+            height: auto;
+        }
+
+        .seccion-informacion {
+            max-width: 400px; /* Reducir el ancho */
+            margin: 50px; /* Margen adicional */
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            text-align: left;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: absolute;
+            left: 15%; /* Alinear a la izquierda */
+            top: 50%; /* Centrar verticalmente */
+            transform: translateY(-50%); /* Ajustar para centrar verticalmente */
+        }
+
+        .seccion-informacion h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .seccion-informacion p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .imagen-derecha {
+            position: absolute;
+            right: 15%; /* Ajusta la distancia desde el borde derecho */
+            top: 50%; /* Centra verticalmente */
+            transform: translateY(-50%); /* Ajusta para centrar verticalmente */
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.2s ease;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            color: #666;
+        }
+
+        .last-link {
+            border-bottom: 2px solid #333;
+        }
+
+        nav ul li a {
+            display: inline-block;
+            font-size: 30px;
+            text-decoration: none;
+            color: #444146;
+            position: relative;
+        }
+
+        nav ul li a::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 4px;
+            background-color: #753aff;
+            transition: width 0.5s;
+        }
+
+        nav ul li a:hover::before {
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="circulo-menta"></div>
+
+    <div class="contenedor">
+        <h1>COCA COLA</h1>
+    </div>
+
+    <div class="container2">
+        <img src="img2.png" alt="Descripción de la imagen">
+    </div>
+
+    <div class="container3">
+        <img src="Imagen3.png" alt="Descripción de la imagen">
+    </div>
+
+    <div class="seccion-informacion">
+        <h2>COCA COLA</h2>
+        <p style="font-size: 24px;">
+            <br>
+            Precio por platillo: <br>
+            Estudiantes: $35 <br>
+            Civil: $45
+            </p>
+    </div>
+
+    <img class="imagen-derecha" src="COMIDASYBEBIDAS/cocacola.jpg" alt="Descripción de la imagen">
+
+    <script src="script.js"></script>
+</body>
+</html>

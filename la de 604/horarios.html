@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style>
+        .contenedor {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            margin-top: 3%;
+        }
+        .contenedor h1{
+            font-size: 60px;
+        }
+
+        .circulo-menta {
+            width: 80px; /* Diámetro del círculo */
+            height: 80px; /* Diámetro del círculo */
+            background-color: #9fe7d9; /* Color menta claro */
+            border: 2px solid #000; /* Borde negro */
+            border-radius: 50%; /* Hace que el div sea un círculo */
+            position: absolute; /* Posiciona el círculo de manera absoluta */
+            top: 30px; /* Distancia desde la parte superior */
+            left: 30px; /* Distancia desde la parte izquierda */
+            z-index: 1; /* Asegura que el círculo esté por encima de otros elementos */
+        }
+
+
+        .container2 {
+            position: fixed;
+            top: 2px;
+            right: 10px;
+        }
+
+        .container2 img {
+            width: 300px;
+            height: auto;
+        }
+
+        .container3 {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .container3 img {
+            width: 70px;
+            height: auto;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.2s ease;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            color: #666;
+        }
+
+        .last-link {
+            border-bottom: 2px solid #333;
+        }
+        .seccion-informacion {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .seccion-informacion h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .seccion-informacion p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+ nav ul li a {
+    display: block;
+    font-size: 30px;
+    text-decoration: none;
+    color: #444146;
+    transition: color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+/* Estilos cuando se pasa el cursor sobre el enlace */
+nav ul li a:hover {
+    color: #444146; /* Cambio de color del texto */
+    transform: scale(1.05); /* Efecto de escala al pasar el cursor */
+}
+/* Estilos para los enlaces */
+nav ul li a {
+    display: inline-block; /* Cambia a inline-block para que la barra tenga la longitud del texto */
+    font-size: 30px;
+    text-decoration: none;
+    color: #444146;
+    position: relative; /* Para posicionar el pseudo-elemento */
+}
+
+/* Estilos del pseudo-elemento de la barra de color */
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0; /* Posición de la barra de color debajo del texto */
+    left: 0;
+    width: 0; /* Ancho inicial de la barra */
+    height: 4px; /* Altura de la barra */
+    background-color: #753aff; /* Color inicial de la barra */
+    transition: width 0.5s; /* Transición suave para el ancho */
+}
+
+/* Estilos cuando se pasa el cursor sobre el enlace */
+nav ul li a:hover::before {
+    width: 100%; /* Ancho completo de la barra al pasar el cursor */
+}
+
+.modal {
+            display: none; /* Ocultar la ventana modal por defecto */
+            position: fixed; /* Posición fija para que aparezca sobre el contenido */
+            z-index: 1; /* Asegurar que esté encima de otros elementos */
+            left: 0;
+            top: 0;
+            width: 100%; /* Ancho completo */
+            height: 100%; /* Altura completa */
+            overflow: auto; /* Permitir desplazamiento si el contenido es demasiado grande */
+            background-color: rgba(0,0,0,0.4); /* Fondo semitransparente */
+            padding-top: 60px; /* Espacio arriba para evitar que se solape con la barra de navegación */
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%; /* Ancho del contenido modal */
+            border-radius: 10px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .modal {
+            display: none; /* Ocultar la ventana modal por defecto */
+            position: fixed; /* Posición fija para que aparezca sobre el contenido */
+            z-index: 1; /* Asegurar que esté encima de otros elementos */
+            left: 0;
+            top: 0;
+            width: 100%; /* Ancho completo */
+            height: 100%; /* Altura completa */
+            overflow: auto; /* Permitir desplazamiento si el contenido es demasiado grande */
+            background-color: rgba(0,0,0,0.4); /* Fondo semitransparente */
+            padding-top: 60px; /* Espacio arriba para evitar que se solape con la barra de navegación */
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            width: 80%; /* Ancho del contenido modal */
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); /* Sombra */
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        /* Estilos adicionales para el botón de abrir la ventana modal */
+        .modal-btn {
+            background-color: #753aff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .modal-btn:hover {
+            background-color: #5e2fa2;
+        }
+    </style>
+</head>
+<body>
+    <div class="circulo-menta"></div>
+
+    <div class="contenedor">
+        <h1>HORARIOS</h1>
+    </div>
+
+    <div class="container2">
+        <img src="img2.png" alt="Descripción de la imagen">
+    </div>
+
+    <div class="container3">
+        <img src="Imagen3.png" alt="Descripción de la imagen">
+    </div>
+
+    <div class="seccion-informacion">
+        <!-- Contenido previo omitido por brevedad -->
+
+        <!-- Enlace para abrir la ventana modal con estilos mejorados -->
+        <button class="modal-btn" id="openModal">Ver Horarios</button>
+
+        <!-- Contenido de la ventana modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Horarios</h2>
+                <p>Lunes a Viernes: 8:00 am - 7:30 pm</p>
+                <p>Sábado y Domingo: 9:00 am - 6:00 pm</p>
+                <a href="paginaprincipal.html">INICIO</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Obtener la referencia del elemento de la ventana modal
+        var modal = document.getElementById("myModal");
+
+        // Obtener la referencia del elemento que abre la ventana modal
+        var btn = document.getElementById("openModal");
+
+        // Obtener la referencia del elemento para cerrar la ventana modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // Asignar la función para abrir la ventana modal al hacer clic en el enlace
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // Asignar la función para cerrar la ventana modal al hacer clic en la "x"
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Asignar la función para cerrar la ventana modal al hacer clic fuera de ella
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

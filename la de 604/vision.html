@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style>
+        .contenedor {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            margin-top: 3%;
+        }
+        .contenedor h1{
+            font-size: 60px;
+        }
+
+        .circulo-menta {
+            width: 80px; /* Diámetro del círculo */
+            height: 80px; /* Diámetro del círculo */
+            background-color: #9fe7d9; /* Color menta claro */
+            border: 2px solid #000; /* Borde negro */
+            border-radius: 50%; /* Hace que el div sea un círculo */
+            position: absolute; /* Posiciona el círculo de manera absoluta */
+            top: 30px; /* Distancia desde la parte superior */
+            left: 30px; /* Distancia desde la parte izquierda */
+            z-index: 1; /* Asegura que el círculo esté por encima de otros elementos */
+        }
+
+
+        .container2 {
+            position: fixed;
+            top: 2px;
+            right: 10px;
+        }
+
+        .container2 img {
+            width: 300px;
+            height: auto;
+        }
+
+        .container3 {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .container3 img {
+            width: 70px;
+            height: auto;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav li {
+            margin-right: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.2s ease;
+            font-size: 20px;
+        }
+
+        nav a:hover {
+            color: #666;
+        }
+
+        .last-link {
+            border-bottom: 2px solid #333;
+        }
+        .seccion-informacion {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .seccion-informacion h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .seccion-informacion p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+ nav ul li a {
+    display: block;
+    font-size: 30px;
+    text-decoration: none;
+    color: #444146;
+    transition: color 0.3s, transform 0.3s; /* Transiciones suaves */
+}
+
+/* Estilos cuando se pasa el cursor sobre el enlace */
+nav ul li a:hover {
+    color: #444146; /* Cambio de color del texto */
+    transform: scale(1.05); /* Efecto de escala al pasar el cursor */
+}
+/* Estilos para los enlaces */
+nav ul li a {
+    display: inline-block; /* Cambia a inline-block para que la barra tenga la longitud del texto */
+    font-size: 30px;
+    text-decoration: none;
+    color: #444146;
+    position: relative; /* Para posicionar el pseudo-elemento */
+}
+
+/* Estilos del pseudo-elemento de la barra de color */
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    bottom: 0; /* Posición de la barra de color debajo del texto */
+    left: 0;
+    width: 0; /* Ancho inicial de la barra */
+    height: 4px; /* Altura de la barra */
+    background-color: #753aff; /* Color inicial de la barra */
+    transition: width 0.5s; /* Transición suave para el ancho */
+}
+
+/* Estilos cuando se pasa el cursor sobre el enlace */
+nav ul li a:hover::before {
+    width: 100%; /* Ancho completo de la barra al pasar el cursor */
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="circulo-menta"></div>
+
+    <div class="contenedor">
+        <h1>VISION</h1>
+    </div>
+
+    <div class="container2">
+        <img src="img2.png" alt="Descripción de la imagen">
+    </div>
+
+    <div class="container3">
+        <img src="Imagen3.png" alt="Descripción de la imagen">
+    </div>
+
+    <div class="seccion-informacion">
+        <h2>Nuestra vision</h2>
+        <p style="font-size: 24px;">Nos visualizamos como el destino preferido de la comunidad escolar para disfrutar de alimentos frescos, deliciosos y 
+            saludables en un ambiente acogedor y familiar. Queremos ser reconocidos como líderes en promover hábitos alimenticios saludables entre los 
+            jóvenes, sirviendo como un modelo de negocio responsable que prioriza la calidad, la nutrición y el servicio excepcional
+        </p>
+<P style="font-size: 24px;">  Aspiramos a ser un punto de encuentro donde estudiantes, padres y personal escolar puedan reunirse para disfrutar de opciones 
+    culinarias satisfactorias, mientras contribuimos activamente al bienestar y al éxito educativo de la comunidad escolar que servimos.</P>
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

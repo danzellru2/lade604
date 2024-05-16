@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style>
+        .contenedor {
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            margin-top: 3%;
+        }
+        .contenedor h1{
+            font-size: 60px;
+        }
+
+        .circulo-menta {
+            width: 80px; /* Diámetro del círculo */
+            height: 80px; /* Diámetro del círculo */
+            background-color: #9fe7d9; /* Color menta claro */
+            border: 2px solid #000; /* Borde negro */
+            border-radius: 50%; /* Hace que el div sea un círculo */
+            position: absolute; /* Posiciona el círculo de manera absoluta */
+            top: 30px; /* Distancia desde la parte superior */
+            left: 30px; /* Distancia desde la parte izquierda */
+            z-index: 1; /* Asegura que el círculo esté por encima de otros elementos */
+        }
+
+
+        .container2 {
+            position: fixed;
+            top: 2px;
+            right: 10px;
+        }
+
+        .container2 img {
+            width: 300px;
+            height: auto;
+        }
+
+        .container3 {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+
+        .container3 img {
+            width: 70px;
+            height: auto;
+        }
+        .seccion-informacion {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .seccion-informacion h2 {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .seccion-informacion p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .formas-pago {
+            text-align: left; /* Alinea el texto a la izquierda */
+            margin-top: 20px; /* Espacio superior */
+        }
+
+        .formas-pago ul {
+            padding-left: 0; /* Quita el espacio interior del borde izquierdo */
+            margin-left: 0; /* Quita el margen izquierdo */
+            list-style-type: none; /* Quita los puntos de la lista */
+        }
+
+        .formas-pago ul li {
+            margin-bottom: 10px; /* Espacio entre elementos de la lista */
+            font-size: 18px; /* Tamaño de fuente */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="circulo-menta"></div>
+
+    <div class="contenedor">
+        <h1>METODOS DE PAGO</h1>
+    </div>
+
+    <div class="container2">
+        <img src="img2.png" alt="Descripción de la imagen">
+    </div>
+
+    <div class="container3">
+        <img src="Imagen3.png" alt="Descripción de la imagen">
+    </div>
+
+    <div class="seccion-informacion">
+        <h2>Formas de Pago</h2>
+        <div class="formas-pago">
+            <ul>
+                <li>Envíos a domicilio $10 (aplica solamente dentro de Santiago de la pena).</li>
+                <li>Fuera de Santiago de la pena tiene un costo extra depende la zona.</li>
+                <li>Efectivo</li>
+                <li>Tarjeta de credito</li>
+                <li>Tarjeta de debito</li>
+                <li>Transferencia bancaria</li>
+                <li>PayPal</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
